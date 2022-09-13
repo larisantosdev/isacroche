@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.fonte h1{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.fonte h2{
+    font-family: 'Bebas Neue', cursive;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.flex-container{
+    display: flex;
+    /*border: 1px solid black;*/
+    margin: auto; /*deixa tudo no meio*/
+    max-width: 1000px;
+    width: 100%;
+    min-width: 320px;
+    
+}
+
+header{
+    display: flex;
+    background-color:#385A64;
+    color: white;
+    height: 90px;
+    align-items: center;
+    
+}
+
+header .list-items{ /*container*/
+    display:flex;
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-between;
+    /*border: 1px solid;*/
+    align-items: center;
+}
+
+.list-items li a{
+    color: white;
+
+}
+
+.menu{
+    justify-content: space-between;
+
+}
+
+.container-texto img{
+    display: block;
+    max-width: 580px;
+    width: 100%;
+    margin: 0;
+}
+
+.container-texto{
+    
+    height: 600px;
+    align-items: center;
+    justify-content: space-between;
+    
+  
+    /* Criamos uma classe "texto" junto ao flex-container
+    pois queremos modificar essa div em si que possui esse
+    flex-container, e assim não modificamos outras divs que
+    estão usando esse flex-container*/
+
+    /*flex-container texto*/
+}
+
+.texto{
+    min-height: 200px;
+}
+
+.texto h1{
+    color: #FF735C;
+    font-size: 80px;
+    margin: 10px;
+    line-height: 50px;
+}
+
+.texto p {
+    font-size: 21px;
+    font-family: 'Baloo 2', cursive;
+    color: rgb(79, 79, 79);
+}
+
+.btn {
+    background-color: #385A64;
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    text-decoration: none;
+    width: 220px;
+    height: 50px;
+    line-height: 50px; /*põe o texto do botão no centro no sentido vertical*/
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 32px;
+    padding: 5px;
+
+    display: block;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+.quemsomos-container{
+    /*border: 1px solid;*/
+    height: 400px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.quemsomos-container img{
+    display: block;
+    width: 400px;
+}
+
+.quemsomos-container h2{
+    font-size: 30px;
+    color: #385A64;
+    margin-bottom: 20px;
+    
+}
+
+.quemsomos-container p{
+    /*border: 2px solid;*/
+    font-size: 18px;
+    font-family: 'Baloo 2', cursive;
+    color: rgb(79, 79, 79);
+    margin-bottom: 10px; /*separou ambos os textos*/
+    width: 90%; /*Diminui o container dos <p>*/
+}
+
+.quemsomos-container h2::before{
+    content: "|";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #385A64;
+    position: relative;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.container-externo{
+    /*border: 1px solid black;*/
+    background-color: #385A64;
+    width: 100%;
+    
+    
+}
+
+#categoria{
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+#categoria h2{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    justify-content: center;
+    display: flex;
+    
+}
+.container-categoria{
+    /*border: 1px solid black;*/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container-categoria img{
+    display: block;
+    max-width: 200px;
+    width: 100%;
+}
+
+.item-categoria{
+    /*border: 2px solid black;*/
+    text-align: center;
+    
+}
+
+.item-categoria a{
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #385A64;
+    height: 40px;
+    max-width: 500px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700; /*negrito*/
+
+    padding: 5px;
+}
+
+.item-categoria p{
+    margin: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+#itens{
+    flex-direction: column;
+    /*Deixa "produtos" separado do restante das divs*/
+    min-height: 600px;
+}
+
+#itens h1{
+    font-size: 30px;
+    color: #FF735C;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    justify-content: center;
+    display: flex;
+}
+
+.produto-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+ 
+
+    
+}
+
+
+
+.item-produto{
+    display: block;
+    /*flex-direction: column;*/
+    border: 5px solid #385A64;
+    margin: 10px;
+    padding: 20px;
+    width: 255px;
+    height: 400px;
+    
+}
+
+
+/*First-child pega o primeiro elemento*/
+
+/*.item-produto:first-child{
+    padding-top: 50px;
+    flex:1;
+}
+
+.item-produto:first-child h3:first-child{
+   
+    margin:0;
+    padding: 0;
+    height: 151px;
+}*/
+
+
+
+
+.item-produto h3{
+    font-size: 34px;
+    color: #385A64;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;    
+}
+
+.item-produto h3::after{
+    content: "";
+    background-color: #385A64;
+    height: 4px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------*/
+
+
+
+.item-produto .btn{
+    margin: auto;
+    font-weight: 700; /*Negrito*/
+
+}
+
+
+
+/*-----------------------------------------------*/
+
+
+
+
+
+.item-produto ul{
+    /*border: 1px solid black;*/
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.item-produto ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 18px;
+}
+
+.item-produto ul li::before{
+    content:"";
+    width: 10px;
+    height: 10px;
+    background-color: #FF735C;
+    margin: 5px;
+    
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+footer{
+    display: flex;
+    /*border: 1px solid black;*/
+    background-color: #385A64;
+    /*width: 100%; /*borda infinita*/
+    height: 100px;
+    align-items: center;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+/*----------------------- MOBILE ---------------------------*/
+
+@media(max-width: 992px){
+    
+    .flex-container{
+        flex-direction: column;
+        
+        
+    }
+
+    header{
+        padding: 30px;
+        margin-bottom: 220px;
+    }
+
+    header h1{
+        margin-bottom: 10px;
+        /*color: #FF735C;*/
+    }
+
+    .container-texto{
+        flex-direction: column-reverse;
+        /*margin-top: 220px;    */   
+    }
+
+    .texto{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+              
+    }
+
+    .quemsomos-container{
+        flex-direction: row-reverse;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .quemsomos-container img{
+        /*max-width: 500px;*/
+        min-width: 415px;
+        margin: auto;
+        margin-bottom: 30px;
+        
+    }
+
+    .quemsomos-container p{
+        width: 90%;
+    }
+
+    #categoria h2{
+        margin: 0;
+    }
+    
+
+    .container-categoria{
+        flex-direction: column;
+        
+    }
+
+    .item-categoria{
+        width: 40%;
+        margin: auto;
+        padding: 5px;
+
+        
+    }
+
+    .item-categoria img{
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+
+
+    .produto-container{
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    .produto-container .item-produto{
+        width: 50%;
+        margin: 10px;        
+    }
+
+    .rodape{
+        display: flex;
+        align-items: center;
+    }
+}
